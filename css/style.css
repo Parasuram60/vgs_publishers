@@ -1,0 +1,378 @@
+/* Reset and fonts */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #111;
+}
+
+/* Header */
+header {
+  background-color: #0f172a;
+  color: white;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo + Title */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title img {
+  height: 55px;
+  width: auto;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+.logo-title .site-name {
+  font-size: 34px;
+  font-weight: 800;
+  color: #facc15;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Nav Center */
+nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #1e40af;
+}
+
+nav a:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 100vh; /* full screen height */
+  background-image: url('../images/vgsbanner.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 40px;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* Keeps the full image visible */
+}
+
+
+.banner-text {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Featured Books */
+.featured-books {
+  background-color: #fdfdfd;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured-books h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.book-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.book {
+  width: 180px;
+  background: #fffbe6;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #facc15;
+}
+
+.book:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.book img {
+  width: 140px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 2px solid #fcd34d;
+}
+
+/* Footer */
+footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+.about-hero {
+  background-image: url('../images/aboutbg.jpg'); /* Replace with your bg */
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  background: rgba(15, 23, 42, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.about-hero h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.about-content {
+  background: #ffffff;
+  padding: 50px 20px;
+}
+
+.about-content h2 {
+  text-align: center;
+  color: #1e40af;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  text-align: center;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.info-cards .card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.info-cards .card span.material-icons {
+  font-size: 40px;
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+.info-cards .card h3 {
+  font-size: 20px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.team-section {
+  background: #f9fafb;
+  padding: 50px 20px;
+}
+
+.team-section h2 {
+  text-align: center;
+  color: #1e40af;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.team-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 2;
+  color: #374151;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.contact-section {
+  background-color: #f8fafc;
+  padding: 60px 20px;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 10%;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contact-info h3 {
+  color: #1e293b;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.contact-info p a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-info p a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.vision-mission {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background-color: #f8fafc;
+}
+
+.vision-mission .box {
+  background-color: #ffffff;
+  border-left: 6px solid #1d4ed8;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 400px;
+}
+
+.vision-mission h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.team {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 30px;
+  color: #1d4ed8;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team .member {
+  background: #fef3c7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.team .member h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.team .member p {
+  font-size: 14px;
+  color: #475569;
+}
+
+.team-note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #334155;
+}
