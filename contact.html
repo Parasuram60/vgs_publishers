@@ -4,113 +4,56 @@
   <meta charset="UTF-8">
   <title>Contact Us | VGS Publishers</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .contact-section {
-      padding: 40px 20px;
-      background-color: #f8fafc;
-    }
-
-    .contact-section h2 {
-      text-align: center;
-      color: #1d4ed8;
-      font-size: 30px;
-      margin-bottom: 30px;
-    }
-
-    .contact-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: center;
-    }
-
-    .contact-info {
-      flex: 1;
-      min-width: 300px;
-      max-width: 400px;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
-
-    .contact-info h3 {
-      margin-top: 20px;
-      color: #0f172a;
-    }
-
-    .contact-info p, .contact-info a {
-      font-size: 15px;
-      color: #334155;
-      text-decoration: none;
-    }
-
-    .map-container {
-      flex: 1;
-      min-width: 300px;
-      max-width: 600px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 320px;
-      border: 0;
-      display: block;
-    }
-  </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo-title">
-      <img src="images/vgslogo.jpeg" alt="VGS Logo">
-      <span class="site-name">VGS Publishers</span>
+<header>
+  <div class="logo-title">
+    <img src="images/vgslogo.jpeg" alt="VGS Logo">
+    <span class="site-name">VGS Publishers</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="books.html">Books</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+</header>
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>📍 Address</h3>
+      <p>VGS Publishers,<br>
+      Near Kanaka Durga Temple,<br>
+      Vijayawada, Andhra Pradesh – 520010</p>
+
+      <h3>📞 Phone</h3>
+      <p><a href="tel:+919948765432">+91 99487 65432</a></p>
+
+      <h3>📧 Email</h3>
+      <p><a href="mailto:vgspublishers@gmail.com">vgspublishers@gmail.com</a></p>
+
+      <h3>🕒 Working Hours</h3>
+      <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="books.html">Books</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
-  </header>
 
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <h3>📍 Address</h3>
-        <p>VGS Publishers,<br>
-        Near Kanaka Durga Temple,<br>
-        Vijayawada, Andhra Pradesh – 520010</p>
-
-        <h3>📞 Phone</h3>
-        <p><a href="tel:+919948765432">+91 99487 65432</a></p>
-
-        <h3>📧 Email</h3>
-        <p><a href="mailto:vgspublishers@gmail.com">vgspublishers@gmail.com</a></p>
-
-        <h3>🕒 Working Hours</h3>
-        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
-      </div>
-
-      <div class="map-container">
-        <iframe
-          src="https://maps.google.com/maps?q=Kanaka%20Durga%20Temple%2C%20Vijayawada&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          loading="eager"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen>
-        </iframe>
-      </div>
+    <div class="map-container">
+      <iframe
+        src="https://maps.google.com/maps?q=Kanaka%20Durga%20Temple%2C%20Vijayawada&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="eager"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 VGS Publishers | All Rights Reserved</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 VGS Publishers | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
